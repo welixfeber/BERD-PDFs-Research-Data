@@ -1,0 +1,662 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Turning PDFs into Research Data · 
+        Turning PDFs into &lt;span class=&quot;block md:inline&quot;&gt; Research &lt;span class=&#x27;test&#x27; data-words=&#x27;Data,Tables,Analyses,Trends&#x27; data-shuffle=&#x27;true&#x27;&gt;&lt;&#x2F;span&gt;
+with Jack Collins
+      
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;assets/fonts/assistant/assistant.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;assets/fonts/fa/css/fontawesome.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;assets/fonts/fa/css/solid.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;assets/fonts/fa/css/brands.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<style type="text/tailwindcss">
+  html {
+  height: 100%;
+}
+
+body {
+  /* Vertical alignment of <header>, <main> and <footer> */
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.prose {
+  @apply text-base;
+}
+
+.container-width {
+  @apply w-full;
+}
+.container {
+  @apply container-width px-6 py-10 lg:px-8;
+}
+.container-mini {
+  @apply mx-auto w-full max-w-3xl;
+
+  .container-escape {
+    @apply lg:-ml-40 lg:-mr-40;
+  }
+}
+
+header {
+  font-weight: 500;
+}
+
+.prose {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+}
+h1{
+    @apply text-xl font-semibold my-6;
+}
+h2{
+    @apply text-lg font-semibold my-6;
+}
+a,button{
+    transition:color 0.5s ease;
+}
+main a{
+    position:relative;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+
+li{
+    position:relative;
+    margin-left:28px;
+    }
+li::before{
+    content:'\2022';
+    position:absolute;
+    left:-28px;
+    line-height:1.6;
+    
+}
+main > *{
+    @apply py-24 px-6 md:px-16 lg:px-24 xl:px-24;
+}
+/*.padding-all{
+@apply px-6 md:px-16 lg:px-24 xl:px-24;
+}*/
+::selection{
+   @apply bg-accent;
+   @apply text-primary;
+}
+
+ p{
+   @apply mb-4 py-0 !important; 
+   @apply max-w-[1024px];
+}
+/*h3:after{
+    content:"";
+    position:absolute;
+    background: white;
+    display: block;
+    top:0;
+    bottom:0;
+    width:100vw;
+    left:0;
+    
+    z-index:0;
+    
+}
+h3{
+    z-index:1;
+}*/
+[popover]:not(:popover-open):not(dialog[open]) > div{
+    transition:all 0.6s ease;
+    transform: translateY(100%);
+ 
+}
+[popover] > div{
+    transition:all 0.6s ease;
+    transform: translateY(0%);
+ 
+}
+
+.inline-arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.invert-logo {
+  filter: invert(1);
+  -webkit-filter: invert(100%);
+}
+
+
+.block-1c a[href] {
+  color: #18bc9c;
+}
+.block-1c a[href]:hover {
+  color: #13967d;
+  text-decoration: underline;
+}
+
+
+</style>
+<script>
+  /** @type {import('tailwindcss').Config} */
+tailwind.config = {
+  theme: {
+    fontSize: {
+      xs:'0.75rem',
+      sm: '1rem',
+      base: '1.5rem', 
+      lg: '2rem',
+      xl: '2.5rem',
+      '2xl': '3rem',
+      '3xl': '4rem',
+      '4xl':'6rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'xxl': '1600px',
+      
+    },
+    extend: {
+      fontFamily: {
+        sans: ['"Assistant Variable"'],
+      },
+      colors: {
+        primary: '#002c16',
+        secondary:'#ffd3e9',
+        grey:'#F5F5F5',
+        accent:'#ffd3e9',
+      },
+    },
+  },
+}
+
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;js/lettershuffler.js"></script>
+<style>
+    .test{
+        display:inline-block;
+    }
+    .test span{
+        display:inline-block;
+        transform:rotateX(0deg);
+        transition:all 0.2s ease;
+        color:rgb(255, 211, 233)
+    }
+     .test span.active{
+        transform:rotateX(90deg);
+        
+    }
+</style>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+<body class="!block">
+  
+  <header class="fixed w-full z-10 top-0">
+    
+    <nav class="main-nav mx-auto flex absolute container-width  justify-between  pt-8 lg:pt-10 pb-6  px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">BERD Academy</span>
+            
+            <span class=" inline-block">
+                <img class="inline-block h-12 mb-3" src="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/assets/BERD_academy_logo.png">
+                <img class="inline-block h-10 mb-3" src="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/assets/TurningPDFs_text_big.png">
+            </span>
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-bold inline-flex items-center justify-center rounded-md p-2.5 text-primary hover:text-accent">
+                <span class="sr-only">Open main menu</span>
+                MENU
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit1/" class="text-base leading-7 font-semibold text-primary hover:text-accent">
+                Unit 1
+            </a>
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit2/" class="text-base leading-7 font-semibold text-primary hover:text-accent">
+                Unit 2
+            </a>
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit3/" class="text-base leading-7 font-semibold text-primary hover:text-accent">
+                Unit 3
+            </a>
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit4/" class="text-base leading-7 font-semibold text-primary hover:text-accent">
+                Unit 4
+            </a>
+            
+            
+            
+            
+            
+            
+        </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div popover id="global-menu" class="bg-transparent" role="dialog" aria-modal="true">
+        <div class="fixed flex flex-col items-center justify-center text-center inset-y-0 right-0 z-10 w-full overflow-y-auto bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="absolute top-4 right-4">
+
+                <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="py-6">
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit1/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Unit 1
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit2/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Unit 2
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit3/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Unit 3
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit4/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Unit 4
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="float-nav" class="over z-30 fixed w-full top-0 -translate-y-full bg-white transition-all duration-700">
+    <nav class=" mx-auto flex relative container-width items-center justify-between  pt-6 pb-6 px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">BERD Academy</span>
+            
+                <img class="h-8 w-auto" src="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/assets/BERD_academy_logo_green.png" alt="BERD Academy">
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="text-primary -m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 ">
+                <span class="sr-only">Open main menu</span>
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+                MENU
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit1/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Unit 1
+            </a>
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit2/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Unit 2
+            </a>
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit3/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Unit 3
+            </a>
+            
+            
+            <a href="https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/unit4/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Unit 4
+            </a>
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;berd-nfdi.github.io&#x2F;turning-pdfs-into-research-data.io&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+</div>
+<script>
+  
+     var lastScrollTop;
+    
+       window.onscroll = function() {dropDownMenu();};
+    function dropDownMenu(){
+        
+        if (window.scrollY > document.getElementsByClassName("hero")[0].offsetHeight - 82){
+            document.getElementById("float-nav").classList.remove("-translate-y-full");
+            //document.getElementById("float-nav").classList.add("translate-y-0");
+            console.log("remove");
+        }else{
+            document.getElementById("float-nav").classList.add("-translate-y-full");
+            //document.getElementById("float-nav").classList.remove("translate-y-0");
+        }
+        
+        
+    }
+</script>
+
+
+  <!--main class=""><!--class='container'*/--></main-->
+    
+
+
+     
+        
+        
+        
+    
+    
+        
+        
+    
+    
+    
+    
+
+<div
+    class="hero text-white flex fixed w-full -z-10 top-0 h-[90vh] items-center "
+    style="background: url(https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/assets/greenhue_shape_zoom.png);background-size:cover;">
+    
+    <h1 class="text-xl lg:text-3xl !font-normal  pt-8 pb-8 px-6 md:px-16 lg:px-24 xl:px-24 m-0">Turning PDFs into <span class="block md:inline"> Research <span class='test' data-words='Data,Tables,Analyses,Trends' data-shuffle='true'></span><br>with Jack Collins</h1>
+    
+    
+    
+    
+</div>
+<main class="mt-[90vh] bg-white z-20 text-base top-0 relative"> 
+    <!--div class="-mt-4"-->
+        
+        
+        <div class="flex flex-wrap  bg-white">
+    
+    
+    <div class="text-xl leading-tight w-full  mb-10 lg:mb-0 lg:w-1/4 pl-0 lg:pr-8"><p>Overview</p>
+</div>
+    <div class="w-full lg:w-3/4 pl-0 lg:pl-8 "><p>Do you ever feel that the data you need for your research is accessible but it’s not in a convenient table, such as company reports or building plans? Perhaps the information you need is spread out across many different documents? </p>
+<p>If only we could read and extract structured data from thousands of written documents.</p>
+<p>In this course, we explore how to accomplish this task by combining web scraping, Optical Character Recognition (OCR), and Natural Language Processing (NLP). Over four weeks, we provide online lessons and interactive sessions to learn the fundamentals of these key technologies.</p>
+</div>
+</div>
+<div class="block-1c flex flex-wrap  bg-grey pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+  
+    <h3 class="text-xl block mb-12 w-full pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+      Introduction
+    </h3>
+  
+
+  <div class="text-base leading-tight w-full mb-10 pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+    
+      <h2 id="welcome-to-the-course-turning-pdfs-into-research-data">Welcome to the course “Turning PDFs into Research Data”!</h2>
+<p>BERD Academy is part of BERD@NFDI; funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – 460037581</p>
+<p>If not indicated otherwise, the contents of this course are licensed under CC BY 4.0 NC
+<br> <br> <br></p>
+<h2 id="topics">Topics</h2>
+<ul>
+<li>Methods for extracting text and files from websites using tools such as Selenium and how to avoid common pitfalls.</li>
+<li>Methods for extracting text from images, such as scans of written documents.</li>
+<li>Exploring technologies that can help automate data extraction from harvested text, including Retrieval Augmented Generation (RAG), and a critical review of common data quality issues.
+<br> <br> <br></li>
+</ul>
+<h2 id="format">Format</h2>
+<p>This is an online course.</p>
+<ul>
+<li>
+<p><strong>Week 1:</strong> Watch pre-prepared video lectures about relevant theory and demonstration of example exercises. The topic is web scraping and OCR (~45 min). Interactive Online Session (~60 min).</p>
+</li>
+<li>
+<p><strong>Week 2:</strong> Applying last week’s lessons to the example coding exercise or your own project (~30 min). Interactive Online Session (~60 min).</p>
+</li>
+<li>
+<p><strong>Week 3:</strong> Watch pre-prepared video lectures about relevant theory and demonstration of example exercises. The topic is NLP and common data extract issues (~30 min). Interactive Online Session (~60 min).</p>
+</li>
+<li>
+<p><strong>Week 4:</strong> Applying last week’s lessons to the example coding exercise or your own project (~30 min). Interactive Online Session (~60 min).
+<br> <br> <br></p>
+</li>
+</ul>
+<h2 id="weekly-meetings">Weekly Meetings</h2>
+<p>The course includes 4 live Online Meetings, in which you will discuss the week’s contents with the instructor and fellow participants: </p>
+<ul>
+<li>Meeting 1: Mar 13, 2025, 4:30pm – 5:30pm CET* </li>
+<li>Meeting 2: Mar 20, 2025, 4:30pm – 5:30pm CET*</li>
+<li>Meeting 3: Apr 03, 2025, 4:30pm – 5:30pm CEST*</li>
+<li>Meeting 4: Apr 10, 2025, 4:30pm – 5:30pm CEST*
+<br><br> </li>
+</ul>
+<p>*Please note the timezone and the change to summertime during the run of the course.
+<br> <br> <br></p>
+<h2 id="about-the-instructor">About the Instructor</h2>
+<p><a href="https://www.uni-mannheim.de/gess/programs/cdss/our-students/2022/john-jack-collins/">John ‘Jack’ Collins</a> is a PhD Student in Sociology at the Graduate School of Economic and Social Sciences. He holds a Bachelor’s of Sociology with Honours from the Australian National University. Jack has a Master’s degree in Data Science from James Cook University. His Master’s project was regarding predictive modelling for student attrition from sub-tertiary courses in Australia. During his Master’s studies, he also assisted in research projects regarding social attitudes and voting behaviour in Australia. Before starting PhD, Jack was a Senior IT Consultant specialising in data engineering, analytics and software development. Jack is interested in applying Data Science and IT to sociological research, particularly with regard to machine learning, analytics, and web applications.</p>
+
+    
+  </div>
+</div>
+
+<div class="block-1c flex flex-wrap  bg-white pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+  
+    <h3 class="text-xl block mb-12 w-full pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+      Contents
+    </h3>
+  
+
+  <div class="text-base leading-tight w-full mb-10 pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+    
+      <h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>
+<p>Basic programming knowledge (R, python, …)
+Note that the course will be in Python, but if you only know R, this is still ok! The code examples are simple and will run entirely on <a href="https://colab.research.google.com/">Google Colab</a>, meaning you will not have to install anything. This course will make a good opportunity to try Python for the first time and you can also try the self-paced <a href="https://www.berd-nfdi.de/berd-academy/data-science-with-python/">BERD introduction to Python course</a>.</p>
+</li>
+<li>
+<p>Willingness to learn new technical skills</p>
+</li>
+<li>
+<p><a href="https://support.google.com/accounts/answer/27441?hl=en">A Google Account</a>
+<br> <br> <br></p>
+</li>
+</ul>
+<h2 id="what-to-prepare">What to prepare</h2>
+<ul>
+<li>If you want to code in Python, you will need a Google account so you can use <a href="https://colab.research.google.com/">Google Colab</a>. You may also need to use your Google Account to open an account with <a href="https://console.llama-api.com/">Llama AI</a>. We will do this together during the course if necessary, so no need to prepare beforehand.
+<br> <br> <br></li>
+</ul>
+<h2 id="course-materials">Course Materials</h2>
+<ul>
+<li><a href="https://github.com/BERD-NFDI/turning-pdfs-into-research-data.io/blob/e52796ed0800105ded224ec691ddaf0c415f128d/docs/Gemeinde_Kirchheim_Sportsfield.pdf">An example single PDF</a></li>
+<li>For those students who don;t have a particular project of their own, here’s a PDF you could practise with: <a href="https://arxiv.org/abs/2205.14135">https://arxiv.org/abs/2205.14135</a></li>
+<li>A zipped file of many examples PDFs
+<br> <br> <br></li>
+</ul>
+<h2 id="readings-and-external-resources">Readings and external resources</h2>
+<ul>
+<li>
+<p>(optional content) If you want to understand Large Language Models (LLM) on a more technical level, this makes an excellent visual overview of the mathematics involved. <br><br> 3Blue1Brown (Director). (2024, April 1). But what is a GPT? Visual intro to transformers | Chapter 5, Deep Learning. <a href="https://www.youtube.com/watch?v=wjZofJX0v4M">https://www.youtube.com/watch?v=wjZofJX0v4M</a> </p>
+</li>
+<li>
+<p>(optional content) If you want a more advanced discussion of web scraping, this is a dedicated textbook (not necessary for this course). <br> <br>Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining | Wiley. (n.d.). Wiley.Com. Retrieved 3 June 2024, from <a href="https://www.wiley.com/en-us/Automated+Data+Collection+with+R%3A+A+Practical+Guide+to+Web+Scraping+and+Text+Mining-p-9781118834817">https://www.wiley.com/en-us/Automated+Data+Collection+with+R%3A+A+Practical+Guide+to+Web+Scraping+and+Text+Mining-p-9781118834817</a></p>
+</li>
+<li>
+<p>The applied examples from this course are based on work by a team of researchers from this project. <br><br> DSSGxMunich/land-sealing-dataset-and-analysis: This repo offers the code developed during DSSGx Munich 2023 for producing and analysing a comprehensive dataset about land parcels from the state of NRW in Germany. (n.d.). Retrieved 3 June 2024, from <a href="https://github.com/DSSGxMunich/land-sealing-dataset-and-analysis">https://github.com/DSSGxMunich/land-sealing-dataset-and-analysis</a></p>
+</li>
+<li>
+<p>Using an AI ‘BERT’ to classify open-ended text with some pre-training of BERT involved. <br><br> Gweon, H., &amp; Schonlau, M. (2024). Automated classification for open-ended questions with BERT. Journal of Survey Statistics and Methodology, 12(2), 493–504. <a href="https://doi.org/10.1093/jssam/smad015">https://doi.org/10.1093/jssam/smad015</a></p>
+</li>
+<li>
+<p>Comparing LLMs to dedicated Named Entity Extraction Deep Learners <br> <br> How effective are large language models in named entity extraction compared to traditional machine learning algorithms? | 10 Answers from Research papers. (n.d.). SciSpace - Question. Retrieved 3 June 2024, from <a href="https://typeset.io/questions/how-effective-are-large-language-models-in-named-entity-p29rfup468">https://typeset.io/questions/how-effective-are-large-language-models-in-named-entity-p29rfup468</a><a href="https://en.wikipedia.org/wiki/Kerry_Airport">.</a></p>
+</li>
+<li>
+<p>This researcher conducted the web scraping project which supplies many examples in this course. <br><br> ldmnch. (2024). Ldmnch/bavaria-building-plans-digitalization [Jupyter Notebook]. <a href="https://github.com/ldmnch/bavaria-building-plans-digitalization">https://github.com/ldmnch/bavaria-building-plans-digitalization</a> (Original work published 2023)</p>
+</li>
+<li>
+<p>Comparison of several OCR tools. <br><br>OCR in 2024: Benchmarking Text Extraction/Capture Accuracy. (n.d.). AIMultiple: High Tech Use Cases &amp; Tools to Grow Your Business. Retrieved 3 June 2024, from <a href="https://research.aimultiple.com/ocr-accuracy/">https://research.aimultiple.com/ocr-accuracy/</a></p>
+</li>
+<li>
+<p>Free web article providing detailed code examples of web scraping in Python. <br><br> Python, R. (n.d.). A Practical Introduction to Web Scraping in Python – Real Python. Retrieved 3 June 2024, from <a href="https://realpython.com/python-web-scraping-practical-introduction/">https://realpython.com/python-web-scraping-practical-introduction/</a></p>
+</li>
+<li>
+<p>Website designed to help developers practice web scraping. <br><br> Test Sites | Web Scraper. (n.d.). Retrieved 3 June 2024, from <a href="https://webscraper.io/test-sites">https://webscraper.io/test-sites</a></p>
+</li>
+<li>
+<p>Comparison of several industry solutions for extracting data from open text.<br><br>Top AI Apps &amp; Tools for Document data extraction. (n.d.). Deepgram. Retrieved 3 June 2024, from <a href="https://deepgram.com/ai-apps">https://deepgram.com/ai-apps</a></p>
+</li>
+<li>
+<p>Introduction to ‘Nougat’ an OCR model especially for parsing tables and equations in academic papers.<br><br> <a href="https://facebookresearch.github.io/nougat/">https://facebookresearch.github.io/nougat/</a></p>
+</li>
+</ul>
+
+    
+  </div>
+</div>
+<div id="subscribe" class="bg-primary text-white"> 
+    <div class="text-xl leading-tight mb-8"><p>Subscribe to receive our latest research updates.</p>
+</div>
+
+    <div id="mc_embed_signup">
+        <form action="https://privacyperceptions.us8.list-manage.com/subscribe/post?u=d468acafb21a2d106b0cca2b3&amp;id=2ef607f45a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+            <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group email max-w-[960px] inline-block">
+                    <input class='p-4 text-primary' type="email" value="" placeholder="Enter your email address" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
+                </div>
+                <div class="optionalParent sub inline-block p-4 bg-accent text-primary">
+                    <div class="clear foot">
+                        <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe">
+                    </div>
+                </div>
+                <div class="mc-field-group check mt-2 max-w-[960px]">
+                    <input type="checkbox" value="" name="" class="required accept" id="accept" aria-required="true">
+                    <label class="checkbox subfield" for="accept">
+                        I would like to receive email communications from BERD and agree with the data protection regulations and the described processing of personal data there. 
+                    </label>
+                </div>
+ 
+                <div id="mce-responses" class="clear foot font-bold">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <!-- Success response with extra margin above -->
+                    <div class="response" id="mce-success-response" style="display:none; margin-top: 30px;"></div>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d468acafb21a2d106b0cca2b3_2ef607f45a" tabindex="-1" value=""></div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            window.fnames = new Array(); 
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL'; ftypes[0] = 'email';
+            fnames[1] = 'FNAME'; ftypes[1] = 'text';
+            fnames[2] = 'LNAME'; ftypes[2] = 'text';
+            fnames[3] = 'ADDRESS'; ftypes[3] = 'address';
+            fnames[4] = 'PHONE'; ftypes[4] = 'phone';
+            fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+</div>
+ 
+        
+        
+        
+    <!--/div -->
+</main>
+<script>
+    //remove empty <p></p> generated by Zola
+     var paragraphs = document.querySelectorAll("main > p");
+       for (var i = 0; i < paragraphs.length; i++) {
+        if (paragraphs[i].innerHTML==""){
+            paragraphs[i].remove();
+        }
+        
+    }
+</script>
+
+  
+  <footer class="bg-white text-primary py-6 px-6 md:px-16 lg:px-24 xl:px-24 z-40" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+    <div class="flex flex-wrap justify-between items-start space-y-4 md:space-y-0"> <!-- flex-wrap added for wrapping -->
+        <!-- Contact Information -->
+        <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8"> <!-- Column on small screens, row on larger screens -->
+            <!-- Email Section -->
+            <a href="mailto:berd-academy@stat.uni-muenchen.de" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fas fa-envelope mr-2"></i> <!-- Email icon -->
+                berd-academy@stat.uni-muenchen.de
+            </a>
+
+            <!-- LinkedIn Section -->
+            <a href="https://www.linkedin.com/school/berd-nfdi/" target="_blank" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fab fa-linkedin mr-2"></i> <!-- LinkedIn icon -->
+                @berd-nfdi
+            </a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6"> <!-- Make links wrap and align properly -->
+            <a href="/impressum" class="text-base font-semibold leading-tight hover:text-accent">Impressum</a>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 mt-6"></div>
+
+    <!-- Footer bottom -->
+    <div class="flex justify-between items-center pt-4">
+        <p class="text-sm leading-5">&copy; 2025 – BERD Academy. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://berd-nfdi.github.io/turning-pdfs-into-research-data.io/sitemap.xml
